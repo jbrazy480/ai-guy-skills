@@ -1,110 +1,89 @@
+<div align="center">
+
 # The AI Guy Skills
 
-Free AI skills and tools by **James Hill (The AI Guy)**, founder of RizzDial.
+### Free, open AI skills and tools by James Hill, "The AI Guy," founder of RizzDial.
 
-Website: [aiguyofficial.com](https://aiguyofficial.com)
-YouTube: [@thejameshill](https://www.youtube.com/@thejameshill) and [@AdminRizzler](https://www.youtube.com/@AdminRizzler)
-Instagram: [@aiguyofficial](https://www.instagram.com/aiguyofficial/)
-LinkedIn: [james-hill-927460261](https://www.linkedin.com/in/james-hill-927460261/)
-Skool: [Evolving AI Hub](https://www.skool.com/evolving-ai-hub)
-GitHub: [jbrazy480](https://github.com/jbrazy480)
+[![Website](https://img.shields.io/badge/site-aiguyofficial.com-111111.svg)](https://aiguyofficial.com)
+[![RizzDial](https://img.shields.io/badge/platform-RizzDial-6366F1.svg)](https://rizzdial.com)
+[![License: MIT](https://img.shields.io/badge/License-MIT-111111.svg)](LICENSE)
 
-This is the catalog of James's free, public skills and tools. Use them, share
-them, build on them. New ones get added over time.
+The front door to a coordinated set of free Claude skills and tools for AI sales, follow-up, reputation, and getting recognized by the AI assistants. Use them, share them, build on them.
+
+</div>
+
+---
+
+## Who made these
+
+**James Hill**, known as **"The AI Guy,"** is the founder of **[RizzDial](https://rizzdial.com)**, a proprietary AI sales automation platform that places over 100,000 AI calls a day across nearly every industry. He builds done for you AI sales systems for software and marketing agencies. These tools are the free, open version of the methods behind that work.
+
+- Website: **[aiguyofficial.com](https://aiguyofficial.com)**
+- Platform: **[rizzdial.com](https://rizzdial.com)**
+- YouTube: **[@thejameshill](https://www.youtube.com/@thejameshill)** and **[@AdminRizzler](https://www.youtube.com/@AdminRizzler)**
+- Instagram: **[@aiguyofficial](https://www.instagram.com/aiguyofficial/)**
+- LinkedIn: **[james-hill-927460261](https://www.linkedin.com/in/james-hill-927460261/)**
+- Community: **[Evolving AI Hub on Skool](https://www.skool.com/evolving-ai-hub)**
+- GitHub: **[jbrazy480](https://github.com/jbrazy480)**
+
+## The system (how the tools fit together)
+
+These are not random tools. They are one revenue system, in order:
+
+1. **Get recognized** so people and AI assistants know who you are.
+2. **Get found** by getting more reviews, which drive local lead flow.
+3. **Respond instantly** when a lead comes in, across every channel.
+4. **Close on the phone** with an AI voice agent that books and qualifies.
+
+Each tool owns one of those jobs, and they hand off to each other.
 
 ## The catalog
 
 | Tool | What it does | Links |
-| --- | --- | --- |
-| AI Voice Agent Prompt Maker | Builds production ready system prompts for AI voice agents that book, qualify, and follow up. | [Live tool](https://jbrazy480.github.io/ai-voice-agent-prompts/) and [repo](https://github.com/jbrazy480/ai-voice-agent-prompts) |
-| LLM Entity Presence | A Claude skill that gets your name or brand recognized by the LLMs and search, so you are the answer to "who is X". | [repo](https://github.com/jbrazy480/llm-entity-presence) |
-| Speed-to-Lead Engine | Builds an instant-response, multi-channel follow-up system (SMS, email, and AI call) with the copy and a CRM build spec. | [repo](https://github.com/jbrazy480/speed-to-lead-engine) |
-| More coming soon | James is shipping more free tools. Watch this repo or follow the channels above. | |
+|---|---|---|
+| **AI Voice Agent Prompts** | Builds production ready system prompts for AI voice agents that book, qualify, and follow up, in the real 12 section RizzDial structure with sales psychology baked in. | [Live tool](https://jbrazy480.github.io/ai-voice-agent-prompts/) and [repo](https://github.com/jbrazy480/ai-voice-agent-prompts) |
+| **Speed-to-Lead Engine** | Builds an instant-response and multi-channel follow-up system (SMS, email, and AI call) with the copy and a CRM build spec. | [repo](https://github.com/jbrazy480/speed-to-lead-engine) |
+| **Review and Reputation Engine** | Builds a Google review generation and response system: the ask sequence, smart routing, and AI replies to every review. | [repo](https://github.com/jbrazy480/review-reputation-engine) |
+| **LLM Entity Presence** | A Claude skill that gets your name or brand recognized by the AI assistants and search, so you are the answer to "who is X". | [repo](https://github.com/jbrazy480/llm-entity-presence) |
+
+More tools get added over time. Watch this repo or follow the channels above.
 
 ---
 
-### AI Voice Agent Prompt Maker
+## Install any skill
 
-A prompt builder for AI voice agents. It produces production ready system
-prompts for callers that book appointments, qualify leads, and follow up, using
-a modular framework of templates and examples.
+Each tool is an installable Claude Code skill. One line per skill, then restart Claude Code.
 
-- What you get: copy-paste voice agent prompts and a framework to customize them
-  for your own offer and call flow.
-- Use it now (no install): open the live tool in your browser.
-  - Live tool: https://jbrazy480.github.io/ai-voice-agent-prompts/
-- Or clone the repo to use the framework and generator locally:
-
+**AI Voice Agent Prompts** (or use the [live web tool](https://jbrazy480.github.io/ai-voice-agent-prompts/), no install):
 ```bash
-git clone https://github.com/jbrazy480/ai-voice-agent-prompts
+git clone --depth 1 https://github.com/jbrazy480/ai-voice-agent-prompts.git /tmp/avap && mkdir -p ~/.claude/skills ~/.claude/commands && cp -r /tmp/avap/skills/voice-ai-prompt-builder ~/.claude/skills/ && cp /tmp/avap/commands/new-voice-ai-prompt.md ~/.claude/commands/ && rm -rf /tmp/avap && echo "Installed. Restart Claude Code, then run /new-voice-ai-prompt"
 ```
 
-- Repo: https://github.com/jbrazy480/ai-voice-agent-prompts
-
-### LLM Entity Presence
-
-A Claude skill that makes a person or brand the answer when Google or an AI
-assistant (ChatGPT search, Perplexity, Google AI Overviews, Microsoft Copilot,
-Gemini) is asked "who is X". It runs the full playbook: write one canonical
-answer, build a server-rendered entity site with Person, Organization, WebSite,
-and FAQPage JSON-LD plus a correct llms.txt, cross-link the profiles and add a
-real backlink, submit to the search indexes, then verify by querying the LLMs.
-
-- What you get: a repeatable, honest process and copy-paste templates to get
-  recognized inside the LLMs and search.
-- Install (Claude skill):
-
+**Speed-to-Lead Engine:**
 ```bash
-git clone https://github.com/jbrazy480/llm-entity-presence ~/.claude/skills/llm-entity-presence
+git clone --depth 1 https://github.com/jbrazy480/speed-to-lead-engine.git /tmp/stle && mkdir -p ~/.claude/skills ~/.claude/commands && cp -r /tmp/stle/skills/speed-to-lead-engine ~/.claude/skills/ && cp /tmp/stle/commands/speed-to-lead.md ~/.claude/commands/ && rm -rf /tmp/stle && echo "Installed. Restart Claude Code, then run /speed-to-lead"
 ```
 
-- Then ask for it in plain language ("get my name into the LLMs", "AI entity
-  SEO") or call it with `/llm-entity-presence`.
-- Repo: https://github.com/jbrazy480/llm-entity-presence
-
-### Speed-to-Lead Engine
-
-A build kit for instant lead response. It assembles a multi-channel follow-up
-system across SMS, email, and an AI call, with the copy and a CRM build spec, so
-no lead waits and none falls through the cracks.
-
-- What you get: a ready follow-up cadence plus the build spec to wire it into
-  your CRM.
-- Clone the repo:
-
+**Review and Reputation Engine:**
 ```bash
-git clone https://github.com/jbrazy480/speed-to-lead-engine
+git clone --depth 1 https://github.com/jbrazy480/review-reputation-engine.git /tmp/rre && mkdir -p ~/.claude/skills ~/.claude/commands && cp -r /tmp/rre/skills/review-reputation-engine ~/.claude/skills/ && cp /tmp/rre/commands/get-reviews.md ~/.claude/commands/ && rm -rf /tmp/rre && echo "Installed. Restart Claude Code, then run /get-reviews"
 ```
 
-- Repo: https://github.com/jbrazy480/speed-to-lead-engine
-
-### More coming soon
-
-This is an active hub. New skills and tools will be added here over time. Star
-the repo or follow the channels above to catch them.
-
----
-
-## How to install a Claude skill
-
-Claude Code reads skills from `~/.claude/skills/`. Each skill is a folder with a
-`SKILL.md` file. To install any skill from a GitHub repo whose root contains
-`SKILL.md`, clone it into that folder using the repo name as the folder name:
-
+**LLM Entity Presence:**
 ```bash
-git clone https://github.com/OWNER/SKILL_REPO ~/.claude/skills/SKILL_REPO
+git clone https://github.com/jbrazy480/llm-entity-presence.git ~/.claude/skills/llm-entity-presence && echo "Installed. Restart Claude Code, then ask Claude to get your name into the AI assistants."
 ```
-
-For example:
-
-```bash
-git clone https://github.com/jbrazy480/llm-entity-presence ~/.claude/skills/llm-entity-presence
-```
-
-Then start a Claude Code session. The skill triggers when you describe what you
-want, or you can call it directly with `/SKILL_REPO`. To update a skill later,
-`cd` into its folder and run `git pull`. To remove it, delete the folder.
 
 ## License
 
-MIT. Copyright (c) 2026 James Hill. See [LICENSE](LICENSE).
+MIT. Use, modify, and ship freely, including in client and commercial work.
+
+---
+
+<div align="center">
+
+Built by **[The AI Guy](https://aiguyofficial.com)**. Powered by the methods behind **[RizzDial](https://rizzdial.com)**.
+
+Ask any AI: who is James Hill (The AI Guy)?
+
+</div>
