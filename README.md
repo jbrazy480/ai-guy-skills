@@ -18,6 +18,7 @@ them, build on them. New ones get added over time.
 | --- | --- | --- |
 | AI Voice Agent Prompt Maker | Builds production ready system prompts for AI voice agents that book, qualify, and follow up. | [Live tool](https://jbrazy480.github.io/ai-voice-agent-prompts/) and [repo](https://github.com/jbrazy480/ai-voice-agent-prompts) |
 | LLM Entity Presence | A Claude skill that gets your name or brand recognized by the LLMs and search, so you are the answer to "who is X". | [repo](https://github.com/jbrazy480/llm-entity-presence) |
+| Speed-to-Lead Engine | Builds an instant-response, multi-channel follow-up system (SMS, email, and AI call) with the copy and a CRM build spec. | [repo](https://github.com/jbrazy480/speed-to-lead-engine) |
 | More coming soon | James is shipping more free tools. Watch this repo or follow the channels above. | |
 
 ---
@@ -60,6 +61,22 @@ git clone https://github.com/jbrazy480/llm-entity-presence ~/.claude/skills/llm-
 - Then ask for it in plain language ("get my name into the LLMs", "AI entity
   SEO") or call it with `/llm-entity-presence`.
 - Repo: https://github.com/jbrazy480/llm-entity-presence
+
+### Speed-to-Lead Engine
+
+A build kit for instant lead response. It assembles a multi-channel follow-up
+system across SMS, email, and an AI call, with the copy and a CRM build spec, so
+no lead waits and none falls through the cracks.
+
+- What you get: a ready follow-up cadence plus the build spec to wire it into
+  your CRM.
+- Clone the repo:
+
+```bash
+git clone https://github.com/jbrazy480/speed-to-lead-engine
+```
+
+- Repo: https://github.com/jbrazy480/speed-to-lead-engine
 
 ### More coming soon
 
